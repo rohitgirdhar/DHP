@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://www.webglearth.com/api.js"></script> 
+<script>
+  function initialize() {
+    var options = { zoom: 3.0, position: [7.19537,8.524404] };
+//    var earth = new WebGLEarth('earth_div', options);
+//    earth.initMarker(47, 8);
+//    earth.initMarker(47, 10);
+  }
+</script>  
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        
+        <!-- BEGIN TimelineJS -->
+        <script type="text/javascript" src="build/js/storyjs-embed.js"></script>
+        <script>
+            $(document).ready(function() {
+                createStoryJS({
+                    type:       'timeline',
+                    width:      '800',
+                    height:     '600',
+                    source:     'example_json.json',
+                    embed_id:   'my-timeline',
+                    debug:      true
+                });
+            });
+        </script>
+        <!-- END TimelineJS -->
+        
+
+
+</head>
+<body onload="initialize()">
+  <h1>WebGL Earth API: Hello World</h1>
+ <div id="earth_div" style="width:600px;height:400px;border:1px solid gray; padding:2px;"></div> 
+    <div id="my-timeline"></div>
+</body>
+</html>
+
