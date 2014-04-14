@@ -1,1 +1,3 @@
-timeline/index.php
+<?php
+    header('timeline/index.php');
+?>
