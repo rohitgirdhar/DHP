@@ -16,7 +16,7 @@ $(document).ready(function() {
         type:       \'timeline\',
         width:      \'800\',
         height:     \'600\',
-        source:     \'fetch_ideone.php?id=RLHPUW\',
+        source:     \'timeline/fetch_ideone.php?id=RLHPUW\',
         embed_id:   \'my-timeline\',
         debug:      true
     });
