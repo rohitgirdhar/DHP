@@ -16,7 +16,7 @@ $(document).ready(function() {
         type:       \'timeline\',
         width:      \'800\',
         height:     \'600\',
-        source:     \'timeline/fetch_ideone.php?id=' . $_GET['id'] . '\',
+        source:     \'timeline/fetch_socionity.php?id=' . $_GET['id'] . '\',
         embed_id:   \'my-timeline\',
         debug:      true
     });
