@@ -1,0 +1,26 @@
+{
+	"timeline":
+	{
+		"headline":"Worst Nuclear Accidents",
+			"type":"default",
+			"text":"Test2",
+			"startDate":"",
+			"date": [
+			{
+				"startDate":"1979,3,28",
+				"endDate":"",
+				"headline":"Three Mile Island, PA",
+				"text":"",
+				"lat":"40.153889",
+				"long":"20.1",
+				"asset":
+				{
+					"media":"http://youtu.be/SUct_69kNpQ",
+					"credit":"NRC Gov",
+					"caption":""
+				}
+			}
+		]
+	}
+}
+
