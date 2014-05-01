@@ -6,7 +6,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-    <div id="jsoneditor" style="width: 800px; height: 800px;"></div>
+    <div id="jsoneditor" style="width: 800px; height: 500px;"></div>
+    <a href="" id="save" onclick="saveFunc();">Save</a>
 
     <script type="text/javascript" >
         // create the editor
@@ -16,7 +17,7 @@
         // set json
         var json = 
 <?php
-    $fname = 'timelines-data/' . $_GET['id'] . '.json';
+    $fname = '../../timelines-data/' . $_GET['id'] . '.json';
     if (file_exists($fname)) {
         echo file_get_contents($fname);
     } else {
@@ -26,8 +27,15 @@
         ;
         editor.set(json);
 
-        // get json
-        var json = editor.get();
-    </script>
+
+		function saveFunc() {
+			var json_data = editor.get();
+			var json_data = JSON.stringify(json_data);
+			$.post(
+				"jsonSaver.php?id=<?php echo $_GET['id'] ?>",
+				{data : json_data}
+			);
+		}
+		</script>
 </body>
 </html>

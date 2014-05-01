@@ -14,9 +14,9 @@ echo '
 $(document).ready(function() {
     createStoryJS({
         type:       \'timeline\',
-        width:      \'800\',
+        width:      \'700\',
         height:     \'600\',
-        source:     \'timeline/fetch_socionity.php?id=' . $_GET['id'] . '\',
+        source:     \'../timelines-data/' . $_GET['id'] . '.json\',
         embed_id:   \'my-timeline\',
         debug:      true
     });
@@ -34,7 +34,7 @@ $(document).ready(function() {
                 <div id="my-timeline"></div>
             </td>
             <td>
-                <div id="earth_div" style="width:400px;height:266px;border:1px solid gray; padding:2px;"></div> 
+                <div id="earth_div" style="width:300px;height:600px;border:1px solid gray; padding:2px;"></div> 
             </td>
         </tr>
     </table>
